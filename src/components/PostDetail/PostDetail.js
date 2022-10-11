@@ -9,7 +9,7 @@ const PostDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setPostDetail(data))
-    }, [])
+    }, [postId])
     return (
         <div>
             <h3>this is post detail for: {postId}</h3>
